@@ -2,9 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* =====================================================
-   Funcao para imprimir o array
-===================================================== */
+
 void printArray(int arr[], int n) {
     int i;
     for (i = 0; i < n; i++)
@@ -12,9 +10,7 @@ void printArray(int arr[], int n) {
     printf("\n");
 }
 
-/* =====================================================
-   Bubble Sort
-===================================================== */
+
 void bubbleSort(int arr[], int n) {
     int i, j, temp;
 
@@ -29,9 +25,7 @@ void bubbleSort(int arr[], int n) {
     }
 }
 
-/* =====================================================
-   Selection Sort
-===================================================== */
+
 void selectionSort(int arr[], int n) {
     int i, j, minIndex, temp;
 
@@ -49,9 +43,6 @@ void selectionSort(int arr[], int n) {
     }
 }
 
-/* =====================================================
-   Insertion Sort
-===================================================== */
 void insertionSort(int arr[], int n) {
     int i, j, key;
 
@@ -68,9 +59,6 @@ void insertionSort(int arr[], int n) {
     }
 }
 
-/* =====================================================
-   Quick Sort
-===================================================== */
 int partition(int arr[], int low, int high) {
     int pivot = arr[high];
     int i = low - 1;
@@ -103,9 +91,7 @@ void quickSort(int arr[], int low, int high) {
     }
 }
 
-/* =====================================================
-   Merge Sort
-===================================================== */
+
 void merge(int arr[], int l, int m, int r) {
     int i, j, k;
     int n1 = m - l + 1;
@@ -160,9 +146,7 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
-/* =====================================================
-   Funcao para copiar array
-===================================================== */
+
 void copyArray(int origem[], int destino[], int n) {
     int i;
     for (i = 0; i < n; i++)
